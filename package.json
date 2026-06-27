@@ -1,7 +1,7 @@
 {
   "name": "api-livraria",
   "version": "1.0.0",
-  "description": "API de biblioteca feita com Fastify",
+  "description": "API de linguagens feita com Fastify",
   "type": "module",
   "main": "server.js",
   "scripts": {
