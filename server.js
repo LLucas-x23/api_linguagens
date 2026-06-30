@@ -1,7 +1,12 @@
 import { fastify } from "fastify"
+import cors from '@fastify/cors'
 import * as banco from "./banco.js"
 import * as funcao from "./functions.js"
-const server = fastify()
+const server = fastify({logger:true})
+
+await server.register(cors, { 
+  origin: true
+});
 
 server.get('/', (request, reply) => {
     const resposta = funcao.mostrar()
